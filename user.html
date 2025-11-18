@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <script src="sidebar.js"></script>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="logo">
+      <img src="./pictures/logo.png" alt="Logo" class="logo">
+    </div>
+    <div class="menu-icon"><img src="./pictures/menu.png" alt="Menu" class="menu-icon " id="menuIcon"></div>
+    <div class="header-right">
+      <div class="pos-btn"><a href="pos.html">POS</a></div>
+      <div class="bell"><img src="./pictures/bell.png" alt="Notifications" class="bell"></div>
+      <div class="profile"><img src="./pictures/profile.jpg" alt="Profile" class="profile"></div>
+    </div>
+  </div>
+<div class="sidebar" id="sidebar">
+
+    <div class="sidebar-logo"></div>
+
+    <table id="sidebar-table">
+
+     
+        <tr>
+           <td class="menu-item" style="border-bottom: 1px solid #030101;">
+  <a href="./dashboard.html">
+    <img src="./pictures/dashboard.png" alt="Dashboard" style="color: red; width: 60px"><br>
+    Dashboard
+  </a>
+</td>
+        </tr>
+
+        <tr>
+            <td class="menu-item" style="border-bottom: 1px solid #030101;">
+                <a href="./product.html">
+                    <img src="./pictures/food.png" alt="Products" class="sidebar-icon" style="width: 60px;">​
+                    <br>
+                    Products
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="menu-item" style="border-bottom: 1px solid #030101;background-color: rgb(255, 198, 245)">
+                <a href="./people.html" style="filter: invert(28%) sepia(60%) saturate(4266%) hue-rotate(10deg) brightness(99%) contrast(98%);">
+                    <img src="./pictures/people.png" alt="People" class="sidebar-icon" style="width: 60px;">
+                    <br>
+                    People
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="menu-item" style="border-bottom: 1px solid #030101;">
+                <a href="./setting.html">
+                    <img src="./pictures/setting.png" alt="Setting" class="sidebar-icon" style="width: 60px;">
+                    <br>
+                    Setting
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="menu-item" style="border-bottom: 1px solid #030101;">
+                <a href="./report.html">
+                    <img src="./pictures/report.png" alt="Report" class="sidebar-icon" style="width: 60px;">
+                    <br>
+                    Report
+                </a>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+  <div class="create-product">
+    <h2>Users Management</h2>
+    <br>
+    <hr
+      style="background-color: black; height: 3px; width: 1650px; margin-left: 200px; margin-top: -10px; margin-bottom: 20px;">
+    <div class="category-box">
+      <div class="toolbar">
+        <div class="search-box">
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+
+        <div class="toolbar-buttons">
+          <button class="btn blue"><img src="./pictures/icons8-filter-32.png" alt="Filter" class="img">Filter</button>
+          <button class="btn red"><img src="./pictures/icons8-pdf-24.png" alt="PDF" class="img">PDF</button>
+          <button class="btn green"><img src="./pictures/icons8-excel-50.png" alt="Excel" class="img">Excel</button>
+          <button class="btn purple"><img src="./pictures/icons8-import-24 (1).png" alt="Import Customers"
+              class="img">Import Customers</button>
+          <button class="btn gray"><img src="./pictures/icons8-create-48.png" alt="Import Customers"
+              class="img">Create</button>
+
+        </div>
+      </div>
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>
+              <div class="category-content">
+                <span>First Name</span>
+            </th>
+            <th>
+              <div class="category-content">
+              </div>
+            </th>
+            <th>
+              <div class="category-content">
+                <span> Last Name</span>
+                <button class="all-products-btn" aria-label="Sort Category Code">
+                  <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5l4 4H8l4-4zm0 14l-4-4h8l-4 4z" fill="currentColor" />
+                  </svg>
+                </button>
+              </div>
+            </th>
+            <th>
+              <div class="category-content">
+                <span></span>
+              </div>
+            </th>
+            <th>
+              <div class="category-content">
+                <span>Username</span>
+                <button class="all-products-btn" aria-label="Sort Category Code">
+                  <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5l4 4H8l4-4zm0 14l-4-4h8l-4 4z" fill="currentColor" />
+                  </svg>
+                </button>
+              </div>
+            </th>
+            <th>
+              <div class="category-content">
+                <span>Email</span>
+              </div>
+            </th>
+            <th>
+              <div class="category-content">
+                <span></span>
+              </div>
+            </th>
+            <th style="width: 100px;">
+              <div class="category-content">
+                <span>Phone</span>
+              </div>
+            </th>
+            <th>
+              <div class="category-content">
+                <span></span>
+              </div>
+            </th>
+            <th style="width: 150px;">
+              <div class="category-content">
+                <span>Status</span>
+              </div>
+            </th>
+            <th>
+              <div class="category-content">
+                <span>Action</span>
+              </div>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td></td>
+            <td style="height: 40px;">Suon</td>
+            <td></td>
+            <td>Solinda</td>
+            <td></td>
+            <td>Admin</td>
+            <td>solindasoun96@gmail.com</td>
+            <td></td>
+            <td>012 334 567</td>
+            <td></td>
+           <td>
+              <label class="switch-item">
+                <input type="checkbox" checked>
+                <span class="switch"></span>
+              </label>
+            </td>
+            <td class="actions">
+              <i class="fas fa-edit edit"></i>
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td style="height: 40px;">Sok</td>
+            <td></td>
+            <td>Sokcheata</td>
+            <td></td>
+            <td>Sale</td>
+            <td>socheatasale02@gmail.com</td>
+            <td></td>
+            <td>097 123 456</td>
+            <td></td>
+           <td>
+              <label class="switch-item">
+                <input type="checkbox" checked>
+                <span class="switch"></span>
+              </label>
+            </td>
+            <td class="actions">
+              <i class="fas fa-edit edit"></i>
+
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td style="height: 40px;">Seurng</td>
+            <td></td>
+            <td>Sithoun</td>
+            <td></td>
+            <td>Sale</td>
+            <td>sithounsale03@gmail.com</td>
+            <td></td>
+            <td>017 254 789</td>
+            <td></td>
+           <td>
+              <label class="switch-item">
+                <input type="checkbox" checked>
+                <span class="switch"></span>
+              </label>
+            </td>
+            <td class="actions">
+              <i class="fas fa-edit edit"></i>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td></td>
+            <td style="height: 40px;">Sorn</td>
+            <td></td>
+            <td>Puthivatey</td>
+            <td></td>
+            <td>Sale</td>
+            <td>vateysale04@gmail.com</td>
+            <td></td>
+            <td>068 856 123</td>
+            <td></td>
+            <td>
+              <label class="switch-item">
+                <input type="checkbox" checked>
+                <span class="switch"></span>
+              </label>
+            </td>
+            <td class="actions">
+              <i class="fas fa-edit edit"></i>
+
+            </td>
+          </tr>
+
+
+        </tbody>
+      </table>
+      <div class="table-footer">
+        <div class="rows-per-page">
+          Rows per page: <input type="number" value="10" min="1" max="100" class="rows-input"
+            style="width: 40px; border-radius: 5px; text-align: center;">
+
+        </div>
+        <div class="pagination">
+          <span><button disabled style="font-size: 16px;">1 - 2 of 2 < prev next></button></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <Strong> Assignment Group Web 2025</Strong>
+    <hr>
+    &copy; 2025 Developed by Suoun Solinda<br>
+    All right reserve -v1.0
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

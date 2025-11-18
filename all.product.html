@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <script src="sidebar.js"></script>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="logo">
+            <img src="./pictures/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="menu-icon"><img src="./pictures/menu.png" alt="Menu" class="menu-icon " id="menuIcon"></div>
+        <div class="header-right">
+            <div class="pos-btn"><a href="pos.html">POS</a></div>
+            <div class="bell"><img src="./pictures/bell.png" alt="Notifications" class="bell"></div>
+            <div class="profile"><img src="./pictures/profile.jpg" alt="Profile" class="profile"></div>
+        </div>
+    </div>
+<div class="sidebar" id="sidebar">
+
+    <div class="sidebar-logo"></div>
+
+    <table id="sidebar-table">
+
+        <tr>
+           <td class="menu-item" style="border-bottom: 1px solid #030101;">
+  <a href="./dashboard.html">
+    <img src="./pictures/dashboard.png" alt="Dashboard" class="sidebar-icon" style="width: 60px;"><br>
+    Dashboard
+  </a>
+</td>
+        </tr>
+
+        <tr>
+            <td class="menu-item" style="border-bottom: 1px solid #030101;background-color: rgb(255, 198, 245)">
+                <a href="./product.html" style="filter: invert(28%) sepia(60%) saturate(4266%) hue-rotate(10deg) brightness(99%) contrast(98%);">
+                    <img src="./pictures/food.png" alt="Products" class="sidebar-icon" style="width: 60px;">
+                    <br>
+                    Products
+                </a>
+        </tr>
+
+        <tr>
+            <td class="menu-item" style="border-bottom: 1px solid #030101;">
+                <a href="javascript:void(0)" onclick="toggleSubBar(event)">
+                    <img src="./pictures/people.png" alt="People" class="sidebar-icon" style="width: 60px;">
+                    <br>
+                    People
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="menu-item" style="border-bottom: 1px solid #030101;">
+                <a href="javascript:void(0)" onclick="toggleSubBar(event)">
+                    <img src="./pictures/setting.png" alt="Setting" class="sidebar-icon" style="width: 60px;">
+                    <br>
+                    Setting
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="menu-item" style="border-bottom: 1px solid #030101;">
+                <a href="javascript:void(0)" onclick="toggleSubBar(event)">
+                    <img src="./pictures/report.png" alt="Report" class="sidebar-icon" style="width: 60px;">
+                    <br>
+                    Report
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+    <div class="create-product">
+        <h2>All Products</h2>
+        <br>
+        <hr
+            style="background-color: black; height: 3px; width: 1650px; margin-left: 200px; margin-top: -10px; margin-bottom: 20px;">
+        <div class="category-box">
+            <div class="toolbar">
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <div class="toolbar-buttons">
+                    <button class="btn blue"><img src="./pictures/icons8-filter-32.png" alt="Filter" class="img">Filter</button>
+                    <button class="btn red"><img src="./pictures/icons8-pdf-24.png" alt="PDF" class="img">PDF</button>
+                    <button class="btn green"><img src="./pictures/icons8-excel-50.png" alt="Excel" class="img">Excel</button>
+                    <button class="btn purple"><img src="./pictures/icons8-import-24 (1).png" alt="Import Customers" class="img">Import Customers</button>
+                    <button class="btn gray"><img src="./pictures/icons8-create-48.png" alt="Import Customers" class="img">Create</button>
+                    
+                </div>
+            </div>
+        <table class="product-table">
+    <thead>
+      <tr>
+        <th><input type="checkbox"></th>
+        <th>
+        <div class="category-content">
+          <span>Image</span>
+          <button class="all-products-btn" aria-label="Sort Category Code">
+                <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 5l4 4H8l4-4zm0 14l-4-4h8l-4 4z" fill="currentColor" />
+                </svg>
+              </button>
+            </th>
+        <th>
+          <div class="category-content">
+            <span>Type</span>
+            <button class="all-products-btn" aria-label="Sort Category Code">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5l4 4H8l4-4zm0 14l-4-4h8l-4 4z" fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+            <span>Name</span>
+            <button class="all-products-btn" aria-label="Sort Category Code">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5l4 4H8l4-4zm0 14l-4-4h8l-4 4z" fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+            <span>Code</span>
+            <button class="all-products-btn" aria-label="Sort Category Code">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5l4 4H8l4-4zm0 14l-4-4h8l-4 4z" fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+            <span>Brand</span>
+            <button class="all-products-btn" aria-label="Sort Category Code">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5l4 4H8l4-4zm0 14l-4-4h8l-4 4z" fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+            <span>Category</span>
+            <button class="all-products-btn" aria-label="Sort Category Code">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5l4 4H8l4-4zm0 14l-4-4h8l-4 4z" fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+            <span>Cost</span>
+            <button class="all-products-btn" aria-label="Sort Category Code">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5l4 4H8l4-4zm0 14l-4-4h8l-4 4z" fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+            <span>Price</span>
+            <button class="all-products-btn" aria-label="Sort Category Code">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5l4 4H8l4-4zm0 14l-4-4h8l-4 4z" fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+            <span>Unit</span>
+            <button class="all-products-btn" aria-label="Sort Category Code">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5l4 4H8l4-4zm0 14l-4-4h8l-4 4z" fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+            <span>Quantity</span>
+            <button class="all-products-btn" aria-label="Sort Category Code">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5l4 4H8l4-4zm0 14l-4-4h8l-4 4z" fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+            <span>Action</span>
+            <button class="all-products-btn" aria-label="Sort Category Code">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5l4 4H8l4-4zm0 14l-4-4h8l-4 4z" fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td><img src="./pictures/Coca-case.jpg" alt="Coca"></td>
+        <td>Service</td>
+        <td>Coca</td>
+        <td>001</td>
+        <td>Siem Reap</td>
+        <td>Soft Drink</td>
+        <td>----</td>
+        <td>25.00</td>
+        <td>----</td>
+        <td>----</td>
+        <td class="actions">
+          <i class="fas fa-eye view"></i>
+          <i class="fas fa-edit edit"></i>
+          <i class="fas fa-times delete"></i>
+        </td>
+      </tr>
+
+      <tr>
+        <td><input type="checkbox"></td>
+        <td><img src="./pictures/food.jpg" alt="Spaghetti"></td>
+        <td>Single</td>
+        <td>Spaghetti</td>
+        <td>002</td>
+        <td>Siem Reap</td>
+        <td>Main Food</td>
+        <td>15.00</td>
+        <td>15.00</td>
+        <td>Pack</td>
+        <td>0 Pack</td>
+        <td class="actions">
+          <i class="fas fa-eye view"></i>
+          <i class="fas fa-edit edit"></i>
+          <i class="fas fa-times delete"></i>
+        </td>
+      </tr>
+
+       <tr>
+        <td><input type="checkbox"></td>
+        <td><img src="./pictures/khmer-noodle.jpg" alt="khmer-noodle"></td>
+        <td>Single</td>
+        <td>khmer-noodle soup</td>
+        <td>003</td>
+        <td>Siem Reap</td>
+        <td>Main Food</td>
+        <td>10.00</td>
+        <td>10.00</td>
+        <td>Pack</td>
+        <td>0 Pack</td>
+        <td class="actions">
+          <i class="fas fa-eye view"></i>
+          <i class="fas fa-edit edit"></i>
+          <i class="fas fa-times delete"></i>
+        </td>
+      </tr>
+
+      
+       <tr>
+        <td><input type="checkbox"></td>
+        <td><img src="./pictures/khmer.food.jpg" alt="Spaghetti"></td>
+        <td>Single</td>
+        <td>នំបញ្ចុកទឹកប្រហុក✨</td>
+        <td>004</td>
+        <td>Siem Reap</td>
+        <td>Main Food</td>
+        <td>10.00</td>
+        <td>10.00</td>
+        <td>Pack</td>
+        <td>0 Pack</td>
+        <td class="actions">
+          <i class="fas fa-eye view"></i>
+          <i class="fas fa-edit edit"></i>
+          <i class="fas fa-times delete"></i>
+        </td>
+      </tr>
+
+      
+    </tbody>
+  </table>
+  <div class="table-footer">
+    <div class="rows-per-page">
+      Rows per page: <input type="number" value="10" min="1" max="100" class="rows-input" style="width: 40px; border-radius: 5px; text-align: center;">
+    
+    </div>
+    <div class="pagination">
+      <span><button disabled style="font-size: 16px;">1 - 2 of 2  < prev next ></button></span>
+    </div>
+  </div>
+</div>
+</div>
+
+    <footer class="footer">
+        <Strong> Assignment Group Web 2025</Strong>
+        <hr>
+        &copy; 2025 Developed by Suoun Solinda<br>
+        All right reserve -v1.0
+
+    </footer>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
