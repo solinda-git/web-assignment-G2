@@ -11,134 +11,91 @@
 </head>
 
 <body>
-      <div class="topbar">
+    <div class="topbar">
         <div class="logo">
             <img src="./pictures/logo.png" alt="Logo" class="logo">
         </div>
-        <div class="menu-icon"><img src="./pictures/menu.png" alt="Menu" class="menu-icon " id="menuIcon"></div>
+        <div class="menu-icon"><img src="./pictures/menu.png" alt="Menu" class="menu-icon" id="menuIcon"></div>
         <div class="header-right">
             <div class="pos-btn"><a href="pos.html">POS</a></div>
             <div class="bell"><img src="./pictures/bell.png" alt="Notifications" class="bell"></div>
             <div class="profile"><img src="./pictures/profile.jpg" alt="Profile" class="profile"></div>
         </div>
     </div>
+
     <div class="sidebar" id="sidebar">
-    <table id="sidebar-table">
+        <table id="sidebar-table">
+            <tr>
+                <td class="menu-item" style="background-color: rgb(255, 198, 245)">
+                    <a href="./dashboard.html">
+                        <img src="./pictures/dashboard.png" alt="Dashboard" style="width: 60px"><br>
+                        Dashboard
+                    </a>
+                </td>
+            </tr>
 
-        <tr>
-           <td class="menu-item" style="border-bottom: 1px solid #030101;background-color: rgb(255, 198, 245)">
-  <a href="./dashboard.html">
-    <img src="./pictures/dashboard.png" alt="Dashboard" style="color: red; width: 60px"><br>
-    Dashboard
-  </a>
-</td>
-        </tr>
+            <tr><td class="menu-item"><a href="./product.html">
+                <img src="./pictures/food.png" style="width:60px;"><br>Products</a></td></tr>
 
-        <tr>
-            <td class="menu-item" style="border-bottom: 1px solid #030101;">
-                <a href="./product.html">
-                    <img src="./pictures/food.png" alt="Products" class="sidebar-icon" style="width: 60px;">​
-                    <br>
-                    Linda
-                </a>
-            </td>
-        </tr>
+            <tr><td class="menu-item"><a href="./people.html">
+                <img src="./pictures/people.png" style="width:60px;"><br>People</a></td></tr>
 
-        <tr>
-            <td class="menu-item" style="border-bottom: 1px solid #030101;">
-                <a href="./people.html">
-                    <img src="./pictures/people.png" alt="People" class="sidebar-icon" style="width: 60px;">
-                    <br>
-                    People
-                </a>
-            </td>
-        </tr>
+            <tr><td class="menu-item"><a href="./setting.html">
+                <img src="./pictures/setting.png" style="width:60px;"><br>Setting</a></td></tr>
 
-        <tr>
-            <td class="menu-item" style="border-bottom: 1px solid #030101;">
-                <a href="./setting.html">
-                    <img src="./pictures/setting.png" alt="Setting" class="sidebar-icon" style="width: 60px;">
-                    <br>
-                    Setting
-                </a>
-            </td>
-        </tr>
-
-        <tr>
-            <td class="menu-item" style="border-bottom: 1px solid #030101;">
-                <a href="./report.html">
-                    <img src="./pictures/report.png" alt="Report" class="sidebar-icon" style="width: 60px;">
-                    <br>
-                    Report
-                </a>
-            </td>
-        </tr>
-
-    </table>
-
-</div>
+            <tr><td class="menu-item"><a href="./report.html">
+                <img src="./pictures/report.png" style="width:60px;"><br>Report</a></td></tr>
+        </table>
     </div>
+
+    <!-- ⭐️ ALL CARDS TOGETHER HERE ⭐️ -->
     <div class="card-container">
+
+        <!-- Regular Cards -->
         <div class="card">
             <div class="sales-row">
-                <img src="./pictures/money.png" alt="money" class="sales-icon">
-                <div class="sales-info">
-                    Sales<br><span class="sales-amount">$850.00</span>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="sales-row">
-                <img src="./pictures/money.png" alt="money" class="sales-icon">
-                <div class="sales-info">
-                    Sales<br><span class="sales-amount">$850.00</span>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="sales-row">
-                <img src="./pictures/money.png" alt="money" class="sales-icon">
-                <div class="sales-info">
-                    Sales<br><span class="sales-amount">$850.00</span>
-                </div>
+                <img src="./pictures/money.png" class="sales-icon">
+                <div class="sales-info">Sales<br><span class="sales-amount">$850.00</span></div>
             </div>
         </div>
 
-    </div>
-    <div class="chart-container">
-        <div class="chart whitebg shadow">
-            <div class="data-line">
-                <p style="text-align: left;"><strong>This Week Sales</strong></p>
-                <svg width="100%" height="100%">
-                </svg>
-            </div>
-            <div class="data-points">
-                <canvas id="salesChart"></canvas>
+        <div class="card">
+            <div class="sales-row">
+                <img src="./pictures/money.png" class="sales-icon">
+                <div class="sales-info">Sales<br><span class="sales-amount">$850.00</span></div>
             </div>
         </div>
-    </div>
 
-    <div class="sale whitebg shadow">
+        <div class="card">
+            <div class="sales-row">
+                <img src="./pictures/money.png" class="sales-icon">
+                <div class="sales-info">Sales<br><span class="sales-amount">$850.00</span></div>
+            </div>
+        </div>
+
+        <!-- ⭐️ CHART CARD ⭐️ -->
+        <div class="card chart-card">
+            <p class="chart-title"><strong>This Week Sales</strong></p>
+            <canvas id="salesChart"></canvas>
+        </div>
+
+        <!-- ⭐️ SALE BOX AS CARD ⭐️ -->
+        <div class="card sale">
             <strong>Top Selling Products (2025)</strong>
-            <p><img src="./pictures/food.jpg" alt="Data" width="350px" height="350px"></p>
-            <p style="font-size: 18px;">
-                Spaghetti Cabonara
-            </p>
+            <p><img src="./pictures/food.jpg" width="100%"></p>
+            <p style="font-size: 18px;">Spaghetti Carbonara</p>
             <p style="font-size: 18px;"><b style="color: orangered;">$ 250.00</b></p>
         </div>
+
     </div>
 
-
     <footer class="footer">
-       <p style="font-size: 18px; margin-top: 2px;"> Assignment Group Web 2025</p>
+        <p style="font-size: 18px;"> Assignment Group Web 2025</p>
         <hr>
-        <p style="font-size: 16px; margin-top: 1px">&copy; 2025 Developed by Suoun Solinda<br>
-            All right reserve -v1.0
-            </p>
-        
+        <p style="font-size: 16px">&copy; 2025 Developed by Suoun Solinda<br>All rights reserved - v1.0</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
