@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <script src="sidebar.js"></script>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="logo">
+            <img src="./pictures/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="menu-icon"><img src="./pictures/menu.png" alt="Menu" class="menu-icon " id="menuIcon"></div>
+        <div class="header-right">
+            <div class="pos-btn"><a href="pos.html">POS</a></div>
+            <div class="bell"><img src="./pictures/bell.png" alt="Notifications" class="bell"></div>
+            <div class="profile"><img src="./pictures/profile.jpg" alt="Profile" class="profile"></div>
+        </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+
+    <table id="sidebar-table">
+
+    
+        <tr>
+           <td class="menu-item" style="border-bottom: 1px solid #030101;">
+  <a href="./dashboard.html">
+    <img src="./pictures/dashboard.png" alt="Dashboard" style="color: red; width: 60px"><br>
+    Dashboard
+  </a>
+</td>
+        </tr>
+
+        <tr>
+            <td class="menu-item" style="border-bottom: 1px solid #030101;background-color: rgb(255, 198, 245)">
+                <a href="./product.html" style="filter: invert(28%) sepia(60%) saturate(4266%) hue-rotate(10deg) brightness(99%) contrast(98%);">
+
+                    <img src="./pictures/food.png" alt="Products" class="sidebar-icon" style="width: 60px;">​
+                    <br>
+                    Products
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="menu-item" style="border-bottom: 1px solid #030101;">
+                <a href="./people.html">
+                    <img src="./pictures/people.png" alt="People" class="sidebar-icon" style="width: 60px;">
+                    <br>
+                    People
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="menu-item" style="border-bottom: 1px solid #030101;">
+                <a href="./setting.html">
+                    <img src="./pictures/setting.png" alt="Setting" class="sidebar-icon" style="width: 60px;">
+                    <br>
+                    Setting
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="menu-item" style="border-bottom: 1px solid #030101;">
+                <a href="./report.html">
+                    <img src="./pictures/report.png" alt="Report" class="sidebar-icon" style="width: 60px;">
+                    <br>
+                    Report
+                </a>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+    <div class="create-product">
+        <h2>Create New Product</h2>
+        <br>
+        <hr
+            style="background-color: black; height: 3px; width: 1650px; margin-left: 200px; margin-top: -10px; margin-bottom: 20px;">
+
+        <div class="create-box">
+            <div class="row">
+                <div class="col">
+                    <label for="Name" class="input-text"><strong>Name*</strong></label>
+                    <input type="email" id="Name"><br>
+                </div>
+                <div class="col">
+                    <label for="category3" class="input-text"><strong>Category 3*</strong></label>
+                    <input type="text" id="category3"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="category1" class="input-text"><strong>Category 1*</strong></label>
+                    <input type="text" id="category1"><br>
+                </div>
+                <div class="col">
+                    <label for="category4" class="input-text"><strong>Category 4*</strong></label>
+                    <input type="text" id="category4"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="category2" class="input-text"><strong>Category 2*</strong></label>
+                    <input type="text" id="category2"><br>
+                </div>
+                <div class="col">
+                    <label for="category5" class="input-text"><strong>Category 5*</strong></label>
+                    <input type="text" id="category5"><br>
+                </div>
+            </div>
+
+        </div>
+        <input type="submit" value="Submit" class="create-btn">
+    </div>
+    <div class="sale1 whitebg shadow multi-product">
+        <div class="text-content background">
+        <p style="margin-top: 5px; margin-bottom: 15px;"><strong>Multiple Images</strong></p>
+        </div>
+        <div class="sale-image">
+        <div class="upload-image">
+            <p>Drag & Drop<br>Multiple Images<br> For more Products</p>
+            <p>(or) <font style="color: blue;">Select</font></p>
+        </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <Strong> Assignment Group Web 2025</Strong>
+        <hr>
+        &copy; 2025 Developed by Suoun Solinda<br>
+        All right reserve -v1.0
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

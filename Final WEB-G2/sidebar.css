@@ -1,0 +1,144 @@
+/* ------------------------------------------ */
+.sidebar {
+  position: fixed; 
+  top: 60px;
+  width: 150px;
+  height: 100vh;
+  overflow-x: hidden;
+  padding-top:5px;
+  padding-bottom:5px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  transition: all 0.4s ease;
+}
+.sidebar a {
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+}
+
+
+#sidebar-table {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(246, 234, 244);
+  border-collapse: collapse;
+  width: 157px;
+}
+
+.sidebar-icon {
+  width: 60px;
+}
+/* ---------------------------- */
+.sub-bar ul li  a:hover {
+  color: #000000;
+  filter: none
+}
+.sidebar a:hover {
+  color: #000000;
+ 
+}
+.sidebar {
+  position: fixed; 
+  top: 40px;
+  width: 140px;
+  height: 100vh;
+  overflow-x: hidden;
+  padding-top:5px;
+  padding-bottom:5px;
+  z-index: 999;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.sidebar a {
+  padding: 0px px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #000000;
+  display: block;
+  cursor: pointer;
+}
+
+.sidebar.hide {
+  left: -180px;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar a:hover{
+  color: red;
+ filter: invert(28%) sepia(60%) saturate(4266%) hue-rotate(10deg) brightness(99%) contrast(98%);
+}
+
+
+sidebar-table {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(246, 234, 244);
+  border-collapse: collapse;
+  width: 150px;
+}
+ .sidebar-icon {
+  width: 60px;
+}
+.sub-bar {
+    position: fixed;
+    top: 59px;
+    left: 142px; 
+    width: 170px;
+    height: 75vb;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(170, 168, 168, 0.4);
+    z-index: 3000;
+    cursor: pointer;
+}
+
+.sub-icon {
+    width: 35px;
+}
+
+.sub-text {
+    font-size: 15px;
+    color: #080808;
+    
+}
+
+.sub-text :hover{
+  color: #000;
+}
+
+.sub-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+}
+.sub-bar ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.sub-bar ul li {
+    padding: 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.sub-bar ul li img {
+  margin-right: 10px;
+  height: 30px;
+  vertical-align: middle;
+  
+}
+
+.sub-bar ul a{
+  text-align: center;
+}
+
+
+

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <script src="sidebar.js"></script>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="logo">
+            <img src="./pictures/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="menu-icon"><img src="./pictures/menu.png" alt="Menu" class="menu-icon " id="menuIcon"></div>
+        <div class="header-right">
+            <div class="pos-btn"><a href="pos.html">POS</a></div>
+            <div class="bell"><img src="./pictures/bell.png" alt="Notifications" class="bell"></div>
+            <div class="profile"><img src="./pictures/profile.jpg" alt="Profile" class="profile"></div>
+        </div>
+    </div>
+<div class="sidebar" id="sidebar">
+    <table id="sidebar-table">
+
+        <tr>
+           <td class="menu-item" style="border-bottom: 1px solid #030101;">
+  <a href="./dashboard.html">
+    <img src="./pictures/dashboard.png" alt="Dashboard" style="color: red; width: 60px"><br>
+    Dashboard
+  </a>
+</td>
+        </tr>
+
+        <tr>
+            <td class="menu-item" style="border-bottom: 1px solid #030101;">
+                <a href="./product.html">
+                    <img src="./pictures/food.png" alt="Products" class="sidebar-icon" style="width: 60px;">​
+                    <br>
+                    Products
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="menu-item" style="border-bottom: 1px solid #030101;">
+                <a href="./people.html">
+                    <img src="./pictures/people.png" alt="People" class="sidebar-icon" style="width: 60px;">
+                    <br>
+                    People
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="menu-item" style="border-bottom: 1px solid #030101;  background-color: rgb(255, 198, 245)">
+                <a href="./setting.html" style="filter: invert(28%) sepia(60%) saturate(4266%) hue-rotate(10deg) brightness(99%) contrast(98%);">
+                    <img src="./pictures/setting.png" alt="Setting" class="sidebar-icon" style="width: 60px;">
+                    <br>
+                    Setting
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="menu-item" style="border-bottom: 1px solid #030101;">
+                <a href="./report.html">
+                    <img src="./pictures/report.png" alt="Report" class="sidebar-icon" style="width: 60px;">
+                    <br>
+                    Report
+                </a>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+    <div class="create-product">
+        <h2>Currency</h2>
+        <br>
+        <hr
+            style="background-color: black; height: 3px; width: 1650px; margin-left: 200px; margin-top: -10px; margin-bottom: 20px;">
+        <div class="category-box">
+            <div class="toolbar">
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <div class="toolbar-buttons">
+                    <button class="btn gray"><img src="./pictures/icons8-create-48.png" alt="Import Customers" class="img">Create</button>
+                    
+                </div>
+            </div>
+        <table class="product-table">
+    <thead>
+      <tr>
+        <th><input type="checkbox"></th>
+        <th>
+        <div class="category-content">
+          <span>Currency Code</span>
+            </th>
+        <th>
+          <div class="category-content">
+            <span></span>
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+            <button class="all-products-btn" aria-label="Sort Category Code">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5l4 4H8l4-4zm0 14l-4-4h8l-4 4z" fill="currentColor" />
+              </svg>
+            </button>
+            <span>Currency Code</span>
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+            <button class="all-products-btn" aria-label="Sort Category Code">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5l4 4H8l4-4zm0 14l-4-4h8l-4 4z" fill="currentColor" />
+              </svg>
+            </button>
+                <span>Symbol</span>
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+          </div>
+        </th>
+        <th>
+          <div class="category-content">
+            <span>Action</span>
+          </div>
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>R001</td>
+        <td></td>
+        <td></td>
+        <td colspan="1" style="text-align: center; width:170px; height: 40px">Khmer</td>
+        <td></td>
+        <td></td>
+        <td colspan="1" style="text-align: center; width: 170px;">៛</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="actions">
+          <i class="fas fa-edit edit"></i>
+          <i class="fas fa-times delete"></i>
+        </td>
+      </tr>
+
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>USD</td>
+        <td></td>
+        <td></td>
+        <td colspan="1" style="text-align: center; height: 40px">US Dollar</td>
+        <td></td>
+        <td></td>
+        <td colspan="1" style="text-align: center;">$</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="actions">
+          <i class="fas fa-edit edit"></i>
+          <i class="fas fa-times delete"></i>
+        </td>
+      </tr>
+
+       <tr>
+        <td><input type="checkbox"></td>
+        <td>KRW</td>
+        <td></td>
+        <td></td>
+        <td colspan="1" style="text-align: center; height: 40px">Korean Won</td>
+        <td></td>
+        <td></td>
+        <td colspan="1" style="text-align: center;">$$$</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="actions">
+          <i class="fas fa-edit edit"></i>
+          <i class="fas fa-times delete"></i>
+        </td>
+      </tr>
+
+      
+       <tr>
+        <td><input type="checkbox"></td>
+        <td>Chinese Yuan</td>
+        <td></td>
+        <td></td>
+        <td colspan="1" style="text-align: center; height: 40px">004</td>
+        <td></td>
+        <td></td>
+        <td colspan="1" style="text-align: center;">10.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="actions">
+          <i class="fas fa-edit edit"></i>
+          <i class="fas fa-times delete"></i>
+        </td>
+      </tr>
+
+      
+    </tbody>
+  </table>
+  <div class="table-footer">
+    <div class="rows-per-page">
+      Rows per page: <input type="number" value="10" min="1" max="100" class="rows-input" style="width: 40px; border-radius: 5px; text-align: center;">
+    
+    </div>
+    <div class="pagination">
+      <span><button disabled style="font-size: 16px;">1 - 3 of 3  < prev next ></button></span>
+    </div>
+  </div>
+</div>
+</div>
+
+    <footer class="footer">
+        <Strong> Assignment Group Web 2025</Strong>
+        <hr>
+        &copy; 2025 Developed by Suoun Solinda<br>
+        All right reserve -v1.0
+
+    </footer>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>

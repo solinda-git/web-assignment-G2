@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="logo">
+            <img src="./pictures/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="header-right">
+            <div class="dashboard-btn"><a href="dashboard.html">Dashboard</a></div>
+            <div class="profile"><img src="./pictures/profile.jpg" alt="Profile" class="profile"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="white-box">
+            <tr>
+                <input type="text" id="search" title="Search" placeholder="Search..." class="search">
+            </tr>
+            <img src="./pictures/add user.png" alt="Search Icon" class="add-user">
+            <br>
+            <br>
+            <table style="border-collapse: collapse;" border="0" class="ps-table">
+                <tr class="pos-table">
+                    <td style="width: 200px;" class="td-color"><strong>Product</strong></td>
+                    <td style="width: 20px;" class="td-color"><strong>Price</strong></td>
+                    <td style="width: 200px;" class="td-color"><strong>Qty</strong></td>
+                    <td style="width: 200px;" class="td-color"><strong>Subtotal</strong></td>
+                </tr>
+                <tr class="pos-table">
+                    <td style="width: 200px;">Spaghetti</td>
+                    <td style="width: 200px;">$128.00</td>
+                    <td style="width: 200px;">1</td>
+                    <td style="width: 200px;">$128.00</td>
+                </tr>
+                <tr class="pos-table">
+                    <td style="width: 200px;">Coke</td>
+                    <td style="width: 200px;">$5.00</td>
+                    <td style="width: 200px;">2</td>
+                    <td style="width: 200px;">$10.00</td>
+                </tr>
+                <tr class="pos-table">
+                    <td style="width: 200px;">Milk</td>
+                    <td style="width: 200px;">$23.00</td>
+                    <td style="width: 200px;">1</td>
+                    <td style="width: 200px;">$23.00</td>
+                </tr>
+                <tr class="pos-table">
+                    <td style="width: 200px;"></td>
+                    <td style="width: 200px;"></td>
+                    <td style="width: 200px;"></td>
+                    <td style="width: 200px;"></td>
+                </tr>
+                <tr class="pos-table">
+                    <td style="width: 200px;"></td>
+                    <td style="width: 200px;"></td>
+                    <td style="width: 200px;"></td>
+                    <td style="width: 200px;"></td>
+                </tr>
+                <tr class="pos-table">
+                    <td style="width: 200px;"></td>
+                    <td style="width: 200px;"></td>
+                    <td style="width: 200px;"></td>
+                    <td style="width: 200px;"></td>
+                </tr>
+                <tr class="pos-table">
+                    <td style="width: 200px;" colspan="4" class="total-color">Total Payable: $161.00</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <div class="container">
+                <div class="field">
+                    <label for="tax">Tax</label>
+                    <div class="input-group">
+                        <input type="number" id="tax" value="0">
+                        <span class="unit">%</span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="discount">Discount</label>
+                    <div class="input-group">
+                        <input type="number" id="discount" value="0">
+                        <span class="unit">$</span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="shipping">Shipping</label>
+                    <div class="input-group">
+                        <input type="number" id="shipping" value="0">
+                        <span class="unit">$</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="buttons">
+                <button class="reset"><img src="./pictures/icons8-reset-48-2.png" class="icons"
+                        alt="Reset Icon">Reset</button>
+                <button class="pay"><img src="./pictures/icons8-pay-50.png" class="icons" alt="Pay Icon">Pay
+                    Now</button>
+                <button class="draft"><img src="./pictures/icons8-sand-timer-50.png" class="icons"
+                        alt="Sand Timer Icon">Draft</button>
+            </div>
+        </div>
+        <div class="white-box">
+            <div class="container-box">
+                <button class="category-btn category-trigger" id="openPopup">List of Categories</button><br>
+
+                <input type="text" class="pos-scan-product" placeholder="Scan/Search Product by Code or Name">
+            </div>
+
+            <br>
+            <div class="product-container">
+
+                <div class="product-card">
+                    <img src="./pictures/food.jpg" alt="Spaghetti">
+                    <h3>Spaghetti</h3>
+                    <p class="price">$ 128.00</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="./pictures/coca.webp" alt="Coca Cola">
+                    <h3>Coca Cola</h3>
+                    <p class="price">$ 5.00</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="./pictures/milk.webp" alt="Milk">
+                    <h3>Milk</h3>
+                    <p class="price">$ 23.00</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="./pictures/sirloin-steak-recipe.jpg" alt="Steak">
+                    <h3>Steak</h3>
+                    <p class="price">$ 250.00</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="./pictures/burger.webp" alt="Burger">
+                    <h3>Burger</h3>
+                    <p class="price">$ 25.00</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="./pictures/delish-220517-dirty-shirley-cocktail-001-ab-web-1657145301.jpg.avif"
+                        alt="Cocktail">
+                    <h3>Cocktail</h3>
+                    <p class="price">$ 28.00</p>
+                </div>
+            </div>
+            <div class="cir">
+                <img style="margin-left: 400px;" src="./pictures/icons8-back-to-50.png" alt="Data" class="circle-1">
+                <div style="padding-top: -50px;" class="circle"><div class="te2">1</div></div>
+                <div class="circle2"><div class="te2">2</div></div>
+                <img src="./pictures/icons8-next-64-2.png" alt="Data">
+            </div>
+        </div>
+    </div>
+
+    <div class="category-popup-container" id="categoryPopup">
+        <div class="category-popup-content">
+
+            <div class="popup-header">
+                <button class="close-button" id="closePopup">X</button>
+                <span class="popup-title">List Category</span>
+
+            </div>
+
+           <div class="category-container">
+
+    <div class="category-card">
+        <img src="./pictures/icons8-layers-60.png" class="cat-icon">
+        <p>All Category</p>
+    </div>
+
+    <div class="category-card">
+        <img src="./pictures/icons8-fast-food-96.png" class="cat-icon">
+        <p>Fast Foods</p>
+    </div>
+
+    <div class="category-card">
+        <img src="./pictures/icons8-cocktail-64.png" >
+        <p>Hard Drink</p>
+    </div>
+
+    <div class="category-card">
+        <img src="./pictures/icons8-soft-drink-64.png" class="cat-icon">
+        <p>Soft Drink</p>
+    </div>
+     
+</div>
+ <div class="cir">
+                <img style="margin-left: 100px;" src="./pictures/icons8-back-to-50.png" alt="Data" class="circle-1">
+                <div style="padding-top: -50px;" class="circle"><div class="te2">1</div></div>
+                <div class="circle2"><div class="te2">2</div></div>
+                <img src="./pictures/icons8-next-64-2.png" alt="Data">
+            </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const openButton = document.getElementById('openPopup');
+            const closeButton = document.getElementById('closePopup');
+            const popup = document.getElementById('categoryPopup');
+
+            // Function to open the pop-up
+            openButton.addEventListener('click', () => {
+                popup.classList.add('active');
+            });
+
+            // Function to close the pop-up
+            function closePopup() {
+                popup.classList.remove('active');
+            }
+
+            closeButton.addEventListener('click', closePopup);
+
+            // Close pop-up when clicking outside of the content (on the overlay)
+            popup.addEventListener('click', (event) => {
+                if (event.target === popup) {
+                    closePopup();
+                }
+            });
+
+            // Close pop-up when pressing the ESC key
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && popup.classList.contains('active')) {
+                    closePopup();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
